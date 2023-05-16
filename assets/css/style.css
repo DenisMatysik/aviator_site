@@ -292,9 +292,7 @@ footer {
 	}
 }
 
-@media (max-width: 768px) {
-	.main-section2-projects-container {
-		grid-template-columns: repeat(2, 1fr);
-	}
+.hideArticle {
+	display: none;
 }
 /* ================================================================================ */
