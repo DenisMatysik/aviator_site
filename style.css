@@ -158,6 +158,18 @@ header {
 	height: 25px;
 }
 
+@media (max-width: 1750px) {
+	header {
+		padding: 0 120px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.header-nav ul li {
+		margin-right: 0px;
+	}
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 	header {
@@ -438,6 +450,18 @@ footer {
 	margin-top: 55px;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+@media (max-width: 1830px) {
+	footer {
+		padding: 100px 280px;
+	}
+}
+
+@media (max-width: 1750px) {
+	.footer-nav {
+		margin: 0;
+	}
 }
 
 @media (max-width: 1440px) {
