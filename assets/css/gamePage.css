@@ -1,0 +1,140 @@
+#gamePage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gamePage-section1 {
+	width: 100%;
+	background-image: url("/assets/img/gardenSlots/GardenSlotsBackground.png");
+	background-size: auto;
+	background-position: center;
+	height: 250px;
+}
+
+.gamePage-section2 {
+	max-width: 1048px;
+	margin: auto;
+}
+
+.gamePage-section2-navigation {
+	margin: 50px 0 40px;
+	display: flex;
+	font-size: 14px;
+	font-weight: 500;
+	align-items: center;
+}
+
+.gamePage-section2-navigation img {
+	width: 6px;
+	margin: 0 25px;
+}
+
+.selectedChapter {
+	font-weight: 600;
+	color: #008ede;
+}
+
+.gamePage-section2-gameInf-mainImg {
+	width: 570px;
+	height: 351px;
+	margin: 20px 50px 10px 0;
+}
+
+.gamePage-section2-carousel {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+/* карусель обоев */
+.carousel {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.slide {
+	margin-right: 8px;
+}
+
+.slide:last-child {
+	margin-right: 0;
+}
+
+.slide img {
+	width: 125px;
+	height: 74px;
+}
+
+.prev-button,
+.next-button {
+	cursor: pointer;
+	width: 9px;
+	height: 27px;
+}
+
+.prev-button {
+	margin-right: 15px;
+}
+
+.next-button {
+	margin-left: 15px;
+}
+
+.gamePage-section2-gameInf {
+	display: flex;
+}
+
+.gamePage-section2-gameInf-Specifications h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	font-size: 16px;
+	padding: 10px 0;
+	color: #404040;
+}
+
+.gameInf-Specifications-name {
+	font-weight: 600;
+	padding-right: 20px;
+}
+
+.gameInf-Specifications-value {
+	font-weight: 500;
+}
+
+.gameInf-Specifications-name:last-child {
+	padding-bottom: 0;
+}
+.gameInf-Specifications-value:last-child {
+	padding-bottom: 0;
+}
+
+.gamePage-section2-carouselContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.gamePage-section2-textBlock {
+	margin-bottom: 130px;
+}
+
+.gamePage-section2-textBlock h4 {
+	font-size: 24px;
+	font-family: 700;
+	margin-bottom: 20px;
+}
+
+.gamePage-section2-textBlock p {
+	color: #404040;
+	font-size: 16px;
+	font-family: 500;
+}

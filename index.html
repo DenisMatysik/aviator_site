@@ -38,6 +38,10 @@
 			rel="stylesheet"
 			href="assets/css/appDevelopment.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/gamePage.css"
+		/>
 		<script
 			defer
 			src="script.js"
@@ -83,8 +87,8 @@
 		</header>
 		<main>
 			<article
-				class="hideArticle"
 				id="mainPage"
+				style="display: none"
 			>
 				<section class="mainPage-section1">
 					<div class="mainPage-section1-text-block">Разработка веб-сервисов, мобильных<br />приложений, браузерных и мобильных игр</div>
@@ -183,8 +187,8 @@
 				</section>
 			</article>
 			<article
-				class="hideArticle"
 				id="aboutCompany"
+				style="display: none"
 			>
 				<section class="aboutCompany-section1"></section>
 				<section class="aboutCompany-section2">
@@ -335,8 +339,8 @@
 				</section>
 			</article>
 			<article
-				class="hideArticle1"
 				id="appDevelopment"
+				style="display: none"
 			>
 				<section class="appDevelopment-section1">
 					<h2 class="appDevelopment-section1-title">Разработка приложений</h2>
@@ -402,6 +406,138 @@
 					<div class="appDevelopment-section2-textBlock">
 						<h4>Верстка, программирование</h4>
 						<p>После утверждения дизайна разработчики оживляют верстают макеты и разрабатывают серверную логику приложения.</p>
+					</div>
+				</section>
+			</article>
+			<article
+				class="hideArticle1"
+				id="gamePage"
+			>
+				<section class="gamePage-section1"></section>
+				<section class="gamePage-section2">
+					<div class="gamePage-section2-navigation">
+						<p>Главная</p>
+						<img
+							src="/assets/img/unSelectedChapter.png"
+							alt=""
+						/>
+						<p>Игры</p>
+						<img
+							src="/assets/img/selectedChapter.png"
+							alt=""
+						/>
+						<p class="selectedChapter">Разработка приложений</p>
+					</div>
+					<h2 class="gamePage-section2-title">Garden Slot</h2>
+					<div class="gamePage-section2-gameInf">
+						<div class="gamePage-section2-carousel">
+							<div class="gamePage-section2-gameInf-mainImg">
+								<img
+									src="assets/img/gardenSlots/frame1.png"
+									alt="mainImg"
+								/>
+							</div>
+							<div class="gamePage-section2-carouselContainer">
+								<img
+									class="prev-button"
+									src="assets/img/prevBtn.png"
+									alt=""
+								/>
+								<div class="carousel">
+									<div class="slide">
+										<img
+											src="assets/img/gardenSlots/frame2.png"
+											alt="Slide 1"
+										/>
+									</div>
+									<div class="slide">
+										<img
+											src="assets/img/gardenSlots/frame3.png"
+											alt="Slide 2"
+										/>
+									</div>
+									<div class="slide">
+										<img
+											src="assets/img/gardenSlots/frame4.png"
+											alt="Slide 3"
+										/>
+									</div>
+									<div class="slide">
+										<img
+											src="assets/img/gardenSlots/frame5.png"
+											alt="Slide 4"
+										/>
+									</div>
+								</div>
+								<img
+									class="next-button"
+									src="assets/img/nextBtn.png"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="gamePage-section2-gameInf-Specifications">
+							<h3>Характеристики</h3>
+							<table>
+								<tr>
+									<td class="gameInf-Specifications-name">Имя</td>
+									<td class="gameInf-Specifications-value">Fire Link Olvera Street</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Тип игры</td>
+									<td class="gameInf-Specifications-value">Видеослоты</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Дата выхода</td>
+									<td class="gameInf-Specifications-value">07.11.2022</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Технология</td>
+									<td class="gameInf-Specifications-value">HTML5</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Макс. выигрыш</td>
+									<td class="gameInf-Specifications-value">10000 xB</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Барабанов</td>
+									<td class="gameInf-Specifications-value">5</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Волатильность</td>
+									<td class="gameInf-Specifications-value">Средняя</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Работает на</td>
+									<td class="gameInf-Specifications-value">Windows, IOS, Android, Linux</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">Частота выпадений</td>
+									<td class="gameInf-Specifications-value">17%</td>
+								</tr>
+								<tr>
+									<td class="gameInf-Specifications-name">RTP</td>
+									<td class="gameInf-Specifications-value">96%</td>
+								</tr>
+							</table>
+							<!-- <p>Характеристики</p>
+							
+						
+						
+							<div>
+								<p>Технология</p>
+								<p>HTML5</p>
+							</div> -->
+						</div>
+					</div>
+					<div class="gamePage-section2-textBlock">
+						<h4>Описание</h4>
+						<p>
+							Для разработки приложений мы используем технологию React Native (на ней создан Instagram). Данная технология позволяет создать
+							приложение для Android и IOS одновременно, используя единый код, что значительно сокращает сроки и стоимость разработки. В
+							классическом варианте Вам бы пришлось искать отдельно разработчиков Android Java (под Android) и Swift (под IOS), отдельно вести
+							проект с каждой командой, отдельно тестировать каждую версию приложения и т.д.
+						</p>
 					</div>
 				</section>
 			</article>
