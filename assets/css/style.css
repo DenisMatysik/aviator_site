@@ -4,7 +4,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
-	outline: red dashed 1px;
+	/* outline: red dashed 1px; */
 	font-family: "Montserrat", sans-serif;
 }
 

@@ -36,9 +36,12 @@
 }
 
 .gamePage-section2-gameInf-mainImg {
+	margin: 20px 50px 10px 0;
+}
+
+.gamePage-section2-gameInf-mainImg img {
 	width: 570px;
 	height: 351px;
-	margin: 20px 50px 10px 0;
 }
 
 .gamePage-section2-carousel {
