@@ -34,7 +34,5 @@ function showSlide(index) {
 		index = 0;
 	}
 	currentIndex = index;
-	if (currentIndex != 0) {
-		mainImage.setAttribute("src", slides[index].children[0].getAttribute("src")); // Показать текущий слайд
-	}
+	mainImage.setAttribute("src", slides[index].children[0].getAttribute("src")); // Показать текущий слайд
 }
