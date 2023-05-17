@@ -4,16 +4,13 @@
 	align-items: center;
 }
 
-.gamePage-section1 {
+.gamePage-section1 img {
 	width: 100%;
-	background-image: url("/assets/img/gardenSlots/GardenSlotsBackground.png");
-	background-size: auto;
-	background-position: center;
 	height: 250px;
 }
 
 .gamePage-section2 {
-	max-width: 1048px;
+	max-width: 1000px;
 	margin: auto;
 }
 
@@ -113,17 +110,11 @@ td {
 	font-weight: 500;
 }
 
-.gameInf-Specifications-name:last-child {
-	padding-bottom: 0;
-}
-.gameInf-Specifications-value:last-child {
-	padding-bottom: 0;
-}
-
 .gamePage-section2-carouselContainer {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
 .gamePage-section2-textBlock {

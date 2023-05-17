@@ -1,4 +1,6 @@
-//Для элементов 2-ой секции
+import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
+
+//MainPage - элементы 2-ой секции
 const navItems = document.querySelectorAll(".main-section2-projects-nav span");
 navItems.forEach(item => {
 	item.addEventListener("click", () => {
@@ -9,7 +11,31 @@ navItems.forEach(item => {
 	});
 });
 
-//для карусели обоев
+//Прячем все остальные article, когда открываем игру
+const articlesArr = document.querySelectorAll("main article");
+const closeOtherArticles = () => {
+	articlesArr.forEach(article => {
+		if (article.getAttribute("id") !== "gamePage") {
+			article.style.display = "none";
+		} else {
+			article.style.display = "block";
+		}
+	});
+};
+
+// Добавляем нажатие на икноки игр
+const arrGames = document.querySelectorAll(".aboutCompany-section2-projects-container .section2-project");
+arrGames.forEach(el => {
+	const gameName = el.children[0].getAttribute("src").split("/").at(-1).split(".").at(0);
+	el.addEventListener("click", () => {
+		if (gameName === "gardenSlots") {
+			closeOtherArticles();
+			showPageGame(gameName);
+		}
+	});
+});
+
+//gamePage - карусель обоев
 let mainImage = document.querySelector(".gamePage-section2-gameInf-mainImg img");
 let slides = document.getElementsByClassName("slide");
 const prevButton = document.querySelector(".prev-button");

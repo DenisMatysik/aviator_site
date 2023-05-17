@@ -44,6 +44,7 @@
 		/>
 		<script
 			defer
+			type="module"
 			src="script.js"
 		></script>
 		<title>Aviator_Site</title>
@@ -142,7 +143,7 @@
 						</div>
 						<div class="section2-project">
 							<img
-								src="assets/img/projects/3.png"
+								src="assets/img/projects/gardenSlots.png"
 								alt="игра3"
 							/>
 						</div>
@@ -186,10 +187,7 @@
 					</div>
 				</section>
 			</article>
-			<article
-				id="aboutCompany"
-				style="display: none"
-			>
+			<article id="aboutCompany">
 				<section class="aboutCompany-section1"></section>
 				<section class="aboutCompany-section2">
 					<h2 class="aboutCompany-section2-title">Avior Games</h2>
@@ -203,7 +201,7 @@
 					<div class="aboutCompany-section2-projects-container">
 						<div class="section2-project">
 							<img
-								src="assets/img/projects/8.png"
+								src="assets/img/projects/1.png"
 								alt="игра1"
 							/>
 						</div>
@@ -215,7 +213,7 @@
 						</div>
 						<div class="section2-project">
 							<img
-								src="assets/img/projects/3.png"
+								src="assets/img/projects/gardenSlots.png"
 								alt="игра3"
 							/>
 						</div>
@@ -227,7 +225,7 @@
 						</div>
 						<div class="section2-project">
 							<img
-								src="assets/img/projects/5.png"
+								src="assets/img/projects/17.png"
 								alt="приложение1"
 							/>
 						</div>
@@ -263,13 +261,13 @@
 						</div>
 						<div class="section2-project">
 							<img
-								src="assets/img/projects/3.png"
+								src="assets/img/projects/13.png"
 								alt="приложение4"
 							/>
 						</div>
 						<div class="section2-project">
 							<img
-								src="assets/img/projects/2.png"
+								src="assets/img/projects/18.png"
 								alt="приложение4"
 							/>
 						</div>
@@ -409,11 +407,17 @@
 					</div>
 				</section>
 			</article>
+
 			<article
-				class="hideArticle1"
 				id="gamePage"
+				style="display: none"
 			>
-				<section class="gamePage-section1"></section>
+				<section class="gamePage-section1">
+					<img
+						src="assets/img/gardenSlots/background.png"
+						alt="fonSection"
+					/>
+				</section>
 				<section class="gamePage-section2">
 					<div class="gamePage-section2-navigation">
 						<p>Главная</p>
@@ -481,53 +485,68 @@
 							<table>
 								<tr>
 									<td class="gameInf-Specifications-name">Имя</td>
-									<td class="gameInf-Specifications-value">Fire Link Olvera Street</td>
+									<td
+										atr="name"
+										class="gameInf-Specifications-value"
+									>
+										Fire Link Olvera Street
+									</td>
 								</tr>
 								<tr>
 									<td class="gameInf-Specifications-name">Тип игры</td>
-									<td class="gameInf-Specifications-value">Видеослоты</td>
+									<td
+										atr="typeGame"
+										class="gameInf-Specifications-value"
+									>
+										Видеослоты
+									</td>
 								</tr>
 								<tr>
 									<td class="gameInf-Specifications-name">Дата выхода</td>
-									<td class="gameInf-Specifications-value">07.11.2022</td>
+									<td
+										atr="releaseDate"
+										class="gameInf-Specifications-value"
+									>
+										07.11.2022
+									</td>
 								</tr>
 								<tr>
 									<td class="gameInf-Specifications-name">Технология</td>
-									<td class="gameInf-Specifications-value">HTML5</td>
+									<td
+										atr="technology"
+										class="gameInf-Specifications-value"
+									>
+										HTML5
+									</td>
 								</tr>
 								<tr>
 									<td class="gameInf-Specifications-name">Макс. выигрыш</td>
-									<td class="gameInf-Specifications-value">10000 xB</td>
+									<td
+										atr="maxWin"
+										class="gameInf-Specifications-value"
+									>
+										10000 xB
+									</td>
 								</tr>
 								<tr>
 									<td class="gameInf-Specifications-name">Барабанов</td>
-									<td class="gameInf-Specifications-value">5</td>
+									<td
+										atr="reels"
+										class="gameInf-Specifications-value"
+									>
+										5
+									</td>
 								</tr>
 								<tr>
 									<td class="gameInf-Specifications-name">Волатильность</td>
-									<td class="gameInf-Specifications-value">Средняя</td>
-								</tr>
-								<tr>
-									<td class="gameInf-Specifications-name">Работает на</td>
-									<td class="gameInf-Specifications-value">Windows, IOS, Android, Linux</td>
-								</tr>
-								<tr>
-									<td class="gameInf-Specifications-name">Частота выпадений</td>
-									<td class="gameInf-Specifications-value">17%</td>
-								</tr>
-								<tr>
-									<td class="gameInf-Specifications-name">RTP</td>
-									<td class="gameInf-Specifications-value">96%</td>
+									<td
+										atr="volatility"
+										class="gameInf-Specifications-value"
+									>
+										Средняя
+									</td>
 								</tr>
 							</table>
-							<!-- <p>Характеристики</p>
-							
-						
-						
-							<div>
-								<p>Технология</p>
-								<p>HTML5</p>
-							</div> -->
 						</div>
 					</div>
 					<div class="gamePage-section2-textBlock">
