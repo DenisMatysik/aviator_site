@@ -39,6 +39,7 @@
 .gamePage-section2-gameInf-mainImg img {
 	width: 570px;
 	height: 351px;
+	border-radius: 15px;
 }
 
 .gamePage-section2-carousel {
@@ -64,6 +65,7 @@
 .slide img {
 	width: 125px;
 	height: 74px;
+	border-radius: 7px;
 }
 
 .prev-button,
