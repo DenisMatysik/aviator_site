@@ -54,21 +54,6 @@
 	font-weight: 500px;
 }
 
-@media (max-width: 768px) {
-	.mainPage-section1-tiles-container {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.mainPage-section1-tile {
-		width: 100%;
-	}
-
-	.mainPage-section1-tile-content {
-		text-align: center;
-	}
-}
-
 /* Main Section 2 */
 .mainPage-section2 {
 	display: flex;
@@ -164,14 +149,17 @@
 }
 
 /* Responsive */
-@media (max-width: 1440px) {
-	header {
-		padding: 0 220px;
-	}
-}
-
 @media (max-width: 768px) {
-	.mainPage-section2-projects-container {
-		grid-template-columns: repeat(2, 1fr);
+	.mainPage-section1-tiles-container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.mainPage-section1-tile {
+		width: 100%;
+	}
+
+	.mainPage-section1-tile-content {
+		text-align: center;
 	}
 }

@@ -8,11 +8,23 @@
 		/>
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0"
+			content="width=device-width,
+			initial-scale=1.0,
+			minimal-scale=1.0,
+			maximal-scale=1.0,
+			user-scalable=no"
 		/>
 		<link
 			rel="stylesheet"
 			href="assets/css/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/header.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/footer.css"
 		/>
 		<link
 			rel="stylesheet"
@@ -21,6 +33,10 @@
 		<link
 			rel="stylesheet"
 			href="assets/css/aboutCompany.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/appDevelopment.css"
 		/>
 		<script
 			defer
@@ -167,7 +183,7 @@
 				</section>
 			</article>
 			<article
-				class="hideArticle1"
+				class="hideArticle"
 				id="aboutCompany"
 			>
 				<section class="aboutCompany-section1"></section>
@@ -318,40 +334,113 @@
 					</div>
 				</section>
 			</article>
+			<article
+				class="hideArticle1"
+				id="appDevelopment"
+			>
+				<section class="appDevelopment-section1">
+					<h2 class="appDevelopment-section1-title">Разработка приложений</h2>
+				</section>
+				<section class="appDevelopment-section2">
+					<div class="appDevelopment-section2-navigation">
+						<p>Главная</p>
+						<img
+							src="/assets/img/selectedChapter.png"
+							alt=""
+						/>
+						<p class="selectedChapter">Разработка приложений</p>
+					</div>
+					<div class="appDevelopment-section2-subtitles">
+						<p>Технология</p>
+						<p>Технология</p>
+						<p>Технология</p>
+						<p>Технология</p>
+						<p>Технология</p>
+						<p>Технология</p>
+					</div>
+					<div class="appDevelopment-section2-description">
+						<p>
+							<span>Для разработки приложений мы используем технологию React Native (на ней создан Instagram).</span>
+							Данная<br />
+							технология позволяет создать приложение для Android и IOS одновременно, используя единый код, что<br />
+							значительно сокращает сроки и стоимость разработки. В классическом варианте Вам бы пришлось искать<br />
+							отдельно разработчиков Android Java (под Android) и Swift (под IOS), отдельно вести проект с каждой командой,<br />
+							отдельно тестировать каждую версию приложения и т.д.
+						</p>
+						<p>
+							Единственным недостатком React Native является невозможность создавать игровые приложения. Но если ваш<br />
+							бизнес не связан с этой сферой, то об этом можно не думать.
+						</p>
+					</div>
+					<div class="appDevelopment-section2-rectangle"></div>
+					<div class="appDevelopment-section2-technology-list">
+						<h3>Виды технологий:</h3>
+						<ul>
+							<li><span class="bullet"></span>Canvas</li>
+							<li><span class="bullet"></span>HTML5</li>
+							<li><span class="bullet"></span>React</li>
+							<li><span class="bullet"></span>React Native</li>
+							<li><span class="bullet"></span>PhaserJS</li>
+							<li><span class="bullet"></span>PHP (Laravel)</li>
+						</ul>
+					</div>
+					<div class="appDevelopment-section2-textBlock">
+						<h4>Проектирование (прототипирование)</h4>
+						<p>
+							Проектирование это разработка прототипов (схематического отображение) каждой страницы приложения и функциональных связей между ними.
+							В итоге клиент уже на ранних этапах разработки получает полное представление о будущем продукте.
+						</p>
+					</div>
+					<div class="appDevelopment-section2-textBlock">
+						<h4>Дизайн</h4>
+						<p>
+							Этап дизайна включает в себя бриф, где определяются основные стилистические элементы приложения: фирменные цвета, шрифты, стиль
+							базовых элементов и т.д. После утверждения у клиента по заданному брифу разрабатывается дизайн всех страниц приложения, которые
+							объединяются в единую карту экранов.
+						</p>
+					</div>
+					<div class="appDevelopment-section2-textBlock">
+						<h4>Верстка, программирование</h4>
+						<p>После утверждения дизайна разработчики оживляют верстают макеты и разрабатывают серверную логику приложения.</p>
+					</div>
+				</section>
+			</article>
 		</main>
 		<footer>
 			<div class="footer-container">
-				<div class="footer-company-name">AVIOR GROUP</div>
-				<nav class="footer-nav">
-					<ul>
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Разработка</a></li>
-						<li><a href="#">Аутстафф</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="footer-contact-social">
-					<div class="footer-phone">+375(29)-658-94-31</div>
-					<div class="footer-social-icons">
-						<a href="ссылка на WhatsApp"
-							><img
-								src="assets/img/Whatsapp.png"
-								alt="WhatsApp"
-						/></a>
-						<a href="ссылка на Telegram"
-							><img
-								src="assets/img/Telegram.png"
-								alt="Telegram"
-						/></a>
-						<a href="ссылка на Viber"
-							><img
-								src="assets/img/Viber.png"
-								alt="Viber"
-						/></a>
+				<div class="footer-container-navigation">
+					<div class="footer-company-name">AVIOR GROUP</div>
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Разработка</a></li>
+							<li><a href="#">Аутстафф</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="footer-contact-social">
+						<div class="footer-phone">+375(29)-658-94-31</div>
+						<div class="footer-social-icons">
+							<a href="ссылка на WhatsApp"
+								><img
+									src="assets/img/Whatsapp.png"
+									alt="WhatsApp"
+							/></a>
+							<a href="ссылка на Telegram"
+								><img
+									src="assets/img/Telegram.png"
+									alt="Telegram"
+							/></a>
+							<a href="ссылка на Viber"
+								><img
+									src="assets/img/Viber.png"
+									alt="Viber"
+							/></a>
+						</div>
 					</div>
 				</div>
+				<div class="footer-protectText">Все права защищены</div>
 			</div>
-			<div class="footer-protectText">Все права защищены</div>
 		</footer>
 	</body>
 </html>

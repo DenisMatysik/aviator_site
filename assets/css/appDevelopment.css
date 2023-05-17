@@ -1,0 +1,172 @@
+#appDevelopment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.appDevelopment-section1 {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(118.88deg, #33d5f9 4.39%, #1b38f0 63.76%, #000690 123.12%);
+}
+
+.appDevelopment-section1-title {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.appDevelopment-section2 {
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+}
+
+.appDevelopment-section2-navigation {
+	margin: 50px 0 40px;
+	display: flex;
+	font-size: 14px;
+	font-weight: 500;
+	align-items: center;
+}
+
+.appDevelopment-section2-navigation img {
+	width: 6px;
+	/* height: 6px; */
+	margin: 0 25px;
+}
+
+.selectedChapter {
+	font-weight: 600;
+	color: #008ede;
+}
+
+.appDevelopment-section2-subtitles {
+	margin-bottom: 20px;
+}
+
+.appDevelopment-section2-subtitles p {
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+/* .appDevelopment-section2-subtitles p:nth-child(n) {
+	font-size: calc(40px - 4px * (n - 1));
+} */
+
+.appDevelopment-section2-subtitles p:nth-child(1) {
+	font-size: 40px;
+}
+
+.appDevelopment-section2-subtitles p:nth-child(2) {
+	font-size: 36px;
+}
+
+.appDevelopment-section2-subtitles p:nth-child(3) {
+	font-size: 32px;
+}
+
+.appDevelopment-section2-subtitles p:nth-child(4) {
+	font-size: 28px;
+}
+
+.appDevelopment-section2-subtitles p:nth-child(5) {
+	font-size: 24px;
+}
+
+.appDevelopment-section2-subtitles p:nth-child(6) {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.appDevelopment-section2-description p {
+	font-size: 16px;
+	font-weight: 500;
+	color: #404040;
+}
+
+.appDevelopment-section2-description p:first-child {
+	font-style: italic;
+}
+
+.appDevelopment-section2-description p:last-child {
+	text-decoration-line: underline;
+	margin: 15px 0 20px;
+}
+
+.appDevelopment-section2-description p span {
+	font-weight: 700;
+	font-style: normal;
+}
+
+.appDevelopment-section2-rectangle {
+	padding: 0;
+	margin: 0;
+	height: 353px;
+	background-color: #a0ddff;
+}
+
+.appDevelopment-section2-technology-list {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.appDevelopment-section2-technology-list h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.appDevelopment-section2-technology-list ul {
+	margin: 10px 0 0;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.appDevelopment-section2-technology-list ul li {
+	font-size: 16px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	color: #404040;
+}
+
+.appDevelopment-section2-technology-list ul li:last-child {
+	margin-bottom: 0px;
+}
+
+.appDevelopment-section2-technology-list ul li .bullet {
+	transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #009ef7;
+	margin-right: 15px;
+}
+
+.appDevelopment-section2-textBlock {
+	margin-top: 50px;
+}
+
+.appDevelopment-section2-textBlock:last-child {
+	margin-bottom: 100px;
+}
+
+.appDevelopment-section2-textBlock h4 {
+	font-size: 24px;
+	font-family: 700;
+	margin-bottom: 20px;
+}
+
+.appDevelopment-section2-textBlock p {
+	color: #404040;
+	font-size: 16px;
+	font-family: 500;
+}
