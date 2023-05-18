@@ -16,6 +16,9 @@ const closeOtherArticles = (articleName = "gamePage") => {
 
 // Задание реакции на нажатие кнопок навигации
 const headerNavigatiobBtns = [];
+const seeAllProjects = document.querySelector(".mainPage-section2-link");
+headerNavigatiobBtns.push(seeAllProjects.children[0]);
+
 document.querySelectorAll(".pageNavigation ul li").forEach(btn => {
 	// нажатие на все кнопки навигации (кроме копки Разработка - там ховер висит)
 	if (!btn.classList.contains("dropdown")) {
@@ -25,6 +28,8 @@ document.querySelectorAll(".pageNavigation ul li").forEach(btn => {
 		Array.from(btn.children[2].children).forEach(btn => headerNavigatiobBtns.push(btn));
 	}
 });
+
+console.log("headerNavigatiobBtns", headerNavigatiobBtns);
 headerNavigatiobBtns.forEach(btn => {
 	btn.addEventListener("click", () => {
 		switch (btn.textContent) {
@@ -41,6 +46,7 @@ headerNavigatiobBtns.forEach(btn => {
 				closeOtherArticles("appDevelopment");
 				break;
 			case "Посмотреть все работы":
+				console.log("111");
 				closeOtherArticles("allGames");
 				break;
 			// case "Аутстафф":

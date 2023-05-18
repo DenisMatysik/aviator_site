@@ -43,7 +43,7 @@
 
 .allGames-section2-technology-containers {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 130px;
 }
@@ -51,6 +51,8 @@
 .allGames-section2-technology-container {
 	display: flex;
 	flex-direction: column;
+	height: 172px;
+	justify-content: space-between;
 }
 
 .allGames-section2-technology-container p {
