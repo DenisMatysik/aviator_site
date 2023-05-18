@@ -2,14 +2,16 @@ import {showPageGame} from "./showPageGame.js"; //функция отображ�
 
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
+const logoImg = document.querySelector(".header-logo-container img");
 const closeOtherArticles = (articleName = "gamePage") => {
 	articlesArr.forEach(article => {
 		if (article.getAttribute("id") !== articleName) {
-			article.classList.add("hideArticle");
+			article.classList.add("hideElement");
 		} else {
-			article.classList.remove("hideArticle");
+			article.classList.remove("hideElement");
 		}
 	});
+	logoImg.style.display = articleName === "allGames" ? "block" : "none";
 };
 
 // Задание реакции на нажатие кнопок навигации
@@ -55,24 +57,56 @@ headerNavigatiobBtns.forEach(btn => {
 });
 
 //MainPage - элементы 2-ой секции
-const navItems = document.querySelectorAll(".main-section2-projects-nav span");
+const navItems = document.querySelectorAll(".mainPage-section2-projects-nav span");
+const projects = document.querySelectorAll(".mainPage-section2-projects-container .section2-project");
+//функция прячет все остальные плитки, кроме выбранного типа
+const hideOtherProjects = typeProejct => {
+	let hideRule; //правило по которому элементы будут скрываться
+	switch (typeProejct) {
+		case "Игры":
+			hideRule = "game";
+			break;
+		case "Приложения":
+			hideRule = "app";
+			break;
+		case "Сервисы":
+			hideRule = "service";
+			break;
+		default:
+			hideRule = "showAllElements";
+			break;
+	}
+	// скрываю элементы которые не соответствуют правилу
+	projects.forEach(el => {
+		if (hideRule === "showAllElements") {
+			el.style.display = "flex";
+		} else {
+			el.style.display = el.children[0].getAttribute("atr") === hideRule ? "flex" : "none";
+		}
+	});
+};
+
 navItems.forEach(item => {
 	item.addEventListener("click", () => {
 		// Удаление активного класса у всех элементов
 		navItems.forEach(navItem => navItem.classList.remove("active"));
 		// Добавление активного класса на текущий элемент
 		item.classList.add("active");
+		hideOtherProjects(item.textContent);
 	});
 });
 
 // Добавляем нажатие на икноки игр на странице со всеми играми
-const arrGames = document.querySelectorAll(".allGames-section2-projects-container .section2-project");
+// const arrGames = document.querySelectorAll(".allGames-section2-projects-container .section2-project");
+const arrGames = document.querySelectorAll(".section2-project");
+
 arrGames.forEach(el => {
 	const gameName = el.children[0].getAttribute("src").split("/").at(-1).split(".").at(0);
 	el.addEventListener("click", () => {
 		if (gameName === "gardenSlots") {
 			closeOtherArticles();
 			showPageGame(gameName);
+			logoImg.style.display = "block"; //отображение значка AviorGames
 		}
 	});
 });

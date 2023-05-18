@@ -85,7 +85,7 @@ select {
 	}
 }
 /* ================================================================================ */
-.hideArticle {
+.hideElement {
 	display: none;
 }
 /* social-icons */
@@ -189,4 +189,10 @@ select {
 
 .dropdown:hover .showMore {
 	transform: rotate(180deg);
+}
+
+@media (max-width: 1025px) {
+	.pageNavigation ul li {
+		margin-right: 25px;
+	}
 }

@@ -118,24 +118,27 @@
 }
 
 .section2-project {
+	max-width: 310px;
+	max-height: 310px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .section2-project img {
-	width: 310px;
-	height: 310px;
+	width: auto;
+	height: auto;
 	object-fit: cover;
 }
 
 .mainPage-section2-link {
+	cursor: pointer;
 	margin: 70px 0 100px;
 	display: flex;
 	align-items: center;
 }
 
-.mainPage-section2-link a {
+.mainPage-section2-link p {
 	color: #008ede;
 	font-size: 24px;
 	font-weight: 600;
