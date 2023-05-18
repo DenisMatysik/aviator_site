@@ -26,7 +26,7 @@
 			href="assets/css/mainPage.css" />
 		<link
 			rel="stylesheet"
-			href="assets/css/aboutCompany.css" />
+			href="assets/css/allGames.css" />
 		<link
 			rel="stylesheet"
 			href="assets/css/appDevelopment.css" />
@@ -44,24 +44,36 @@
 	</head>
 	<body>
 		<!-- Шапка сайта -->
-		<header>
-			<div class="header-logo">AVIOR GROUP</div>
-			<nav class="header-nav">
+		<header id="header">
+			<div class="header-logo-container">
+				<img
+					style="display: none"
+					src="assets/img/AviorGamesLogo.png"
+					alt="AviorGamesLogo" />
+				<p>AVIOR GROUP</p>
+			</div>
+			<nav class="pageNavigation">
 				<ul>
-					<li><a href="#">О компании</a></li>
-					<li>
+					<li><a href="#header">О компании</a></li>
+					<li class="dropdown">
 						<a href="#">Разработка</a>
 						<img
 							class="showMore"
 							src="assets/img/showIcon.png"
-							alt="" />
+							alt="showMore" />
+						<div class="dropdown-content">
+							<a href="#">Сайты</a>
+							<a href="#header">Игры</a>
+							<a href="#">Сервисы</a>
+							<a href="#header">Моб. приложения</a>
+						</div>
 					</li>
 					<li><a href="#">Аутстафф</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
-			<div class="header-phone">+375(29)-658-94-31</div>
-			<div class="header-social-icons">
+			<div class="phone">+375(29)-658-94-31</div>
+			<div class="social-icons">
 				<a href="ссылка на WhatsApp">
 					<img
 						src="assets/img/Whatsapp.png"
@@ -83,9 +95,7 @@
 		<!-- Главная часть сайта -->
 		<main>
 			<!-- Главная страница -->
-			<article
-				id="mainPage"
-				style="display: none">
+			<article id="mainPage">
 				<section class="mainPage-section1">
 					<div class="mainPage-section1-text-block">
 						Разработка веб-сервисов, мобильных
@@ -168,7 +178,7 @@
 						</div>
 					</div>
 					<div class="mainPage-section2-link">
-						<a href="">Посмотреть все работы</a>
+						<a href="#">Посмотреть все работы</a>
 						<img
 							src="assets/img/vector.png"
 							alt="vector" />
@@ -176,12 +186,14 @@
 				</section>
 			</article>
 			<!----------->
-			<!-- Страница о компании -->
-			<article id="aboutCompany">
-				<section class="aboutCompany-section1"></section>
-				<section class="aboutCompany-section2">
-					<h2 class="aboutCompany-section2-title">Avior Games</h2>
-					<div class="aboutCompany-section2-description">
+			<!-- Страница c играми -->
+			<article
+				id="allGames"
+				class="hideArticle">
+				<section class="allGames-section1"></section>
+				<section class="allGames-section2">
+					<h2 class="allGames-section2-title">Avior Games</h2>
+					<div class="allGames-section2-description">
 						<p>
 							Для разработки приложений мы используем технологию React Native (на ней создан Instagram).
 							<br />
@@ -190,7 +202,7 @@
 							единый код, что значительно сокращает сроки и стоимость разработки.
 						</p>
 					</div>
-					<div class="aboutCompany-section2-projects-container">
+					<div class="allGames-section2-projects-container">
 						<div class="section2-project">
 							<img
 								src="assets/img/projects/1.png"
@@ -252,44 +264,50 @@
 								alt="приложение4" />
 						</div>
 					</div>
-					<div class="aboutCompany-section2-technology">
-						<h2 class="aboutCompany-section2-technology-title">Технологии</h2>
-						<div class="aboutCompany-section2-technology-containers">
-							<div class="aboutCompany-section2-technology-container">
+					<div class="allGames-section2-technology">
+						<h2 class="allGames-section2-technology-title">Технологии</h2>
+						<div class="allGames-section2-technology-containers">
+							<div class="allGames-section2-technology-container">
 								<img
 									src="assets/img/technology/PhaserJS.png"
 									alt="PhaserJS" />
 								<p>PhaserJS</p>
 							</div>
-							<div class="aboutCompany-section2-technology-container">
+							<div class="allGames-section2-technology-container">
 								<img
 									src="assets/img/technology/PhoneGap.png"
 									alt="PhoneGap" />
 								<p>PhoneGap</p>
 							</div>
-							<div class="aboutCompany-section2-technology-container">
+							<div class="allGames-section2-technology-container">
 								<img
 									src="assets/img/technology/Laravel.png"
 									alt="Laravel" />
 								<p>Laravel</p>
 							</div>
-							<div class="aboutCompany-section2-technology-container">
+							<div class="allGames-section2-technology-container">
 								<img
 									src="assets/img/technology/SQL.png"
 									alt="SQL" />
 								<p>SQL</p>
 							</div>
-							<div class="aboutCompany-section2-technology-container">
+							<div class="allGames-section2-technology-container">
 								<img
 									src="assets/img/technology/JS.png"
 									alt="JS" />
 								<p>JS</p>
 							</div>
+							<div class="allGames-section2-technology-container">
+								<img
+									src="assets/img/technology/Canvas.png"
+									alt="Canvas" />
+								<p>Canvas</p>
+							</div>
 						</div>
 					</div>
-					<div class="aboutCompany-section2-contacts">
-						<div class="header-phone">+375(29)-658-94-31</div>
-						<div class="header-social-icons">
+					<div class="allGames-section2-contacts">
+						<div class="phone">+375(29)-658-94-31</div>
+						<div class="social-icons allGames-social-icons">
 							<a href="ссылка на WhatsApp">
 								<img
 									src="assets/img/Whatsapp.png"
@@ -306,12 +324,12 @@
 									alt="Viber" />
 							</a>
 						</div>
-						<div class="aboutCompany-section2-contacts-address">
+						<div class="allGames-section2-contacts-address">
 							Адрес:
 							<br />
 							г.Минск ул.Пушкина 1
 						</div>
-						<div class="aboutCompany-section2-contacts-email">
+						<div class="allGames-section2-contacts-email">
 							Email:
 							<br />
 							avior@tut.by
@@ -323,7 +341,7 @@
 			<!-- Страница о разработке приложений-->
 			<article
 				id="appDevelopment"
-				style="display: none">
+				class="hideArticle">
 				<section class="appDevelopment-section1">
 					<h2 class="appDevelopment-section1-title">Разработка приложений</h2>
 				</section>
@@ -398,7 +416,7 @@
 			<!-- Страница с конкретной игрой-->
 			<article
 				id="gamePage"
-				style="display: none">
+				class="hideArticle">
 				<section class="gamePage-section1">
 					<img
 						src="assets/img/gardenSlots/background.png"
@@ -432,6 +450,7 @@
 								<div class="carousel">
 									<div class="slide">
 										<img
+											class="slideActive"
 											src="assets/img/gardenSlots/frame1.png"
 											alt="Slide 1" />
 									</div>
@@ -538,17 +557,29 @@
 			<div class="footer-container">
 				<div class="footer-container-navigation">
 					<div class="footer-company-name">AVIOR GROUP</div>
-					<nav class="footer-nav">
+					<nav class="pageNavigation footer-nav">
 						<ul>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Разработка</a></li>
+							<li><a href="#header">О компании</a></li>
+							<li class="dropdown">
+								<a href="#">Разработка</a>
+								<img
+									class="showMore"
+									src="assets/img/showIconWhite.png"
+									alt="showMore" />
+								<div class="dropdown-content">
+									<a href="#">Сайты</a>
+									<a href="#header">Игры</a>
+									<a href="#">Сервисы</a>
+									<a href="#headert">Моб. приложения</a>
+								</div>
+							</li>
 							<li><a href="#">Аутстафф</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="footer-contact-social">
-						<div class="footer-phone">+375(29)-658-94-31</div>
-						<div class="footer-social-icons">
+						<div class="phone footer-phone">+375(29)-658-94-31</div>
+						<div class="social-icons footer-social-icons">
 							<a href="ссылка на WhatsApp">
 								<img
 									src="assets/img/Whatsapp.png"

@@ -13,6 +13,14 @@ const showSlide = index => {
 	}
 	currentIndex = index;
 	mainImage.setAttribute("src", slides[index].children[0].getAttribute("src")); // Показать текущий слайд
+	//меняем рамку для нижних картинок
+	Array.from(slides).forEach(element => {
+		if (slides[index] === element) {
+			element.children[0].classList.add("slideActive");
+		} else {
+			element.children[0].classList.remove("slideActive");
+		}
+	});
 };
 
 showSlide(currentIndex);

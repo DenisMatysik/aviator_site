@@ -1,80 +1,81 @@
-.aboutCompany-section1 {
+.allGames-section1 {
 	height: 250px;
 	background: linear-gradient(118.88deg, #33d5f9 4.39%, #1b38f0 63.76%, #000690 123.12%);
 	margin-bottom: 100px;
 }
 
-.aboutCompany-section2 {
-	padding: 0 200px;
+.allGames-section2 {
+	max-width: 1270px;
+	margin: auto;
 }
 
-.aboutCompany-section2-title {
+.allGames-section2-title {
 	font-weight: 700;
 	font-size: 40px;
 	text-align: center;
 	margin-bottom: 20px;
 }
 
-.aboutCompany-section2-description p {
+.allGames-section2-description p {
 	text-align: center;
 	font-weight: 500;
 	font-size: 20px;
 }
 
-.aboutCompany-section2-projects-container {
+.allGames-section2-projects-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 10px;
 	margin: 100px 0 130px;
 }
 
-.aboutCompany-section2-technology {
+.allGames-section2-technology {
 	display: flex;
 	flex-direction: column;
 }
 
-.aboutCompany-section2-technology-title {
+.allGames-section2-technology-title {
 	font-weight: 700;
 	font-size: 36px;
 	text-align: center;
 	margin-bottom: 74px;
 }
 
-.aboutCompany-section2-technology-containers {
+.allGames-section2-technology-containers {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 130px;
 }
 
-.aboutCompany-section2-technology-container {
+.allGames-section2-technology-container {
 	display: flex;
 	flex-direction: column;
 }
 
-.aboutCompany-section2-technology-container p {
+.allGames-section2-technology-container p {
 	font-weight: 700;
 	font-size: 24px;
 	text-align: center;
 }
 
-.aboutCompany-section2-contacts {
+.allGames-section2-contacts {
 	height: 252px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-top: #ff0000 1px solid;
+	border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
-.aboutCompany-section2-contacts .header-social-icons a {
+.allGames-section2-contacts .header-social-icons a {
 	margin-right: 50px;
 }
-.aboutCompany-section2-contacts .header-social-icons a:last-child {
+.allGames-section2-contacts .header-social-icons a:last-child {
 	margin-right: 0px;
 }
 
-.aboutCompany-section2-contacts-address,
-.aboutCompany-section2-contacts-email {
+.allGames-section2-contacts-address,
+.allGames-section2-contacts-email {
 	font-weight: 500;
 	font-size: 20px;
 }
