@@ -11,4 +11,5 @@ export const clearBrowserCache = () => {
 			sessionStorage.removeItem("clearCache");
 		}
 	}
+	// console.log("кэш браузера почищен");
 };

@@ -1,9 +1,14 @@
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
-import {startAnimLine} from "./animationLine.js"; //функция отображает страницу с игрой
+import {startLineAnimation} from "./animationLine.js"; //функция отображает страницу с игрой
 import {clearBrowserCache} from "./clearBrowserCache.js"; //функция отображает страницу с игрой
 
 clearBrowserCache();
-window.addEventListener("load", () => startAnimLine()); //запуск анимации линии когда страница загрузилась
+
+//запуск анимации линии когда страница загрузилась
+window.addEventListener("load", () => {
+	startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
+});
+
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
 const logoContainer = document.querySelector(".header-logo-container");
@@ -46,11 +51,11 @@ headerNavigatiobBtns.forEach(btn => {
 			// case "Сервисы":
 			// 	// closeOtherArticles("allServises");
 			// 	break;
-			case "Моб. приложения":
-				closeOtherArticles("appDevelopment");
+			case "О компании":
+				startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
+				closeOtherArticles("mainPage");
 				break;
 			case "Посмотреть все работы":
-				console.log("111");
 				closeOtherArticles("allGames");
 				break;
 			// case "Аутстафф":
@@ -60,8 +65,7 @@ headerNavigatiobBtns.forEach(btn => {
 			// 	// closeOtherArticles("outstaff");
 			// 	break;
 			default:
-				startAnimLine();
-				closeOtherArticles("mainPage");
+				closeOtherArticles("appDevelopment");
 				break;
 		}
 	});
@@ -122,10 +126,17 @@ arrGames.forEach(el => {
 		}
 	});
 	el.addEventListener("mouseover", function () {
-		el.style.transform = "scale(1.05)";
+		el.style.transform = "scale(1.02)";
 	});
 
 	el.addEventListener("mouseout", function () {
 		el.style.transform = "scale(1)";
 	});
 });
+
+const socialIcons = document.querySelectorAll(".social-icons a");
+socialIcons.forEach(icon =>
+	icon.addEventListener("click", () => {
+		closeOtherArticles("appDevelopment");
+	}),
+);

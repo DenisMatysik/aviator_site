@@ -16,23 +16,9 @@
 
 .mainPage-section1-image-block {
 	margin-bottom: 50px;
-	position: relative;
 	width: 84px;
 	height: 14px;
 	overflow: hidden;
-	/* height: 200px; */
-}
-
-.blue-point {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 100%;
-	width: 10px;
-	height: 10px;
-	background: linear-gradient(108.72deg, #0052d4 9.57%, #4364f7 62.46%, #6fb1fc 115.34%);
-	border-radius: 5px;
-	transform: translate(-50%, -50%);
 }
 
 .mainPage-section1-tiles-container {
@@ -86,8 +72,15 @@
 }
 
 .mainPage-section2-image-block {
-	position: relative;
 	margin-bottom: 50px;
+	width: 84px;
+	height: 14px;
+	overflow: hidden;
+}
+
+.line {
+	width: 0;
+	height: 14px;
 }
 
 .mainPage-section2-projects-nav {
@@ -135,6 +128,7 @@
 }
 
 .section2-project {
+	cursor: pointer;
 	max-width: 310px;
 	max-height: 310px;
 	display: flex;

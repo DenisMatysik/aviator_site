@@ -10,6 +10,7 @@ header {
 	margin: 30px 0 35px;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .header-logo-container p {
@@ -19,7 +20,8 @@ header {
 }
 
 .header-logo-container img {
-	margin-right: 10px;
+	position: absolute;
+	left: -40px;
 	width: 30px;
 	height: 30px;
 }

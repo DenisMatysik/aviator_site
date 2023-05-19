@@ -30,6 +30,7 @@ blockquote,
 dl,
 dd {
 	margin: 0;
+	/* user-select: none; */
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -105,10 +106,10 @@ select {
 }
 
 .social-icons img {
-	width: 25px;
-	height: 25px;
-	min-width: 25px;
-	min-height: 25px;
+	width: 40px;
+	height: 40px;
+	min-width: 40px;
+	min-height: 40px;
 }
 
 .phone {
@@ -139,7 +140,8 @@ select {
 	margin-right: 0px;
 }
 
-.pageNavigation ul li a {
+.pageNavigation ul li a,
+.pageNavigation ul li p {
 	display: block;
 	width: auto;
 	font-size: 16px;
@@ -147,7 +149,12 @@ select {
 	text-decoration: none;
 }
 
-.pageNavigation ul li a:hover {
+.pageNavigation ul li p {
+	cursor: pointer;
+}
+
+.pageNavigation ul li a:hover,
+.pageNavigation ul li p:hover {
 	color: #959090;
 }
 
