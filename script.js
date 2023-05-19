@@ -1,13 +1,22 @@
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
 import {startLineAnimation} from "./animationLine.js"; //функция отображает страницу с игрой
-import {clearBrowserCache} from "./clearBrowserCache.js"; //функция отображает страницу с игрой
 
-clearBrowserCache();
+//запуск очистки кэша браузера при входе на страницу
+window.onload = () => {
+	console.log("очистка кэша");
+	const cacheBuster = new Date().getTime();
+	const stylesheet = document.getElementById("stylesheet");
+	const script = document.getElementById("script");
 
-//запуск анимации линии когда страница загрузилась
-window.addEventListener("load", () => {
+	if (stylesheet) {
+		stylesheet.href = `${stylesheet.href}?v=${cacheBuster}`;
+	}
+
+	if (script) {
+		script.src = `${script.src}?v=${cacheBuster}`;
+	}
 	startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
-});
+};
 
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
@@ -45,16 +54,15 @@ headerNavigatiobBtns.forEach(btn => {
 			case "Игры":
 				closeOtherArticles("allGames");
 				break;
-			// case "Сайты":
-			// 	// closeOtherArticles("allSites");
-			// 	break;
-			// case "Сервисы":
-			// 	// closeOtherArticles("allServises");
-			// 	break;
-			case "О компании":
+			case "Сайты":
 				startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
 				closeOtherArticles("mainPage");
 				break;
+			// case "Сервисы":
+			// 	// closeOtherArticles("allServises");
+			// 	break;
+			// case "О компании":
+			// 	break;
 			case "Посмотреть все работы":
 				closeOtherArticles("allGames");
 				break;
@@ -136,7 +144,8 @@ arrGames.forEach(el => {
 
 const socialIcons = document.querySelectorAll(".social-icons a");
 socialIcons.forEach(icon =>
-	icon.addEventListener("click", () => {
+	icon.addEventListener("click", e => {
+		console.log(e.target.getAttribute("alt"));
 		closeOtherArticles("appDevelopment");
 	}),
 );

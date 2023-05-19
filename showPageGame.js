@@ -28,7 +28,8 @@ export const showPageGame = gameName => {
 	const gameFrames = document.querySelectorAll(".gamePage-section2-carouselContainer .carousel .slide img"); //остальные картинки
 	const specificationsArr = document.querySelectorAll(".gamePage-section2-gameInf-Specifications table tbody tr .gameInf-Specifications-value");
 
-	section1.children[0].setAttribute("src", `${gameInf.path}background.png`); //устанавливаем картинку секции 1
+	section1.style.backgroundImage = `url('${gameInf.path}background.png')`;
+	// section1.children[0].setAttribute("src", `${gameInf.path}background.png`); //устанавливаем картинку секции 1
 	navigationelement.textContent = gameInf.specifications.name; //изменяем навигацию страницы
 	gameTitle.textContent = gameInf.specifications.name; //изменяем заколовок страницы
 	mainFrame.setAttribute("src", `${gameInf.path}/frame1.png`); //устанавливаем новую главную картинку
