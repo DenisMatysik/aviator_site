@@ -1,8 +1,9 @@
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
+import {animateLine, resetLine} from "./animationLine.js"; //функция отображает страницу с игрой
 
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
-const logoImg = document.querySelector(".header-logo-container img");
+const logoContainer = document.querySelector(".header-logo-container");
 const closeOtherArticles = (articleName = "gamePage") => {
 	articlesArr.forEach(article => {
 		if (article.getAttribute("id") !== articleName) {
@@ -11,8 +12,15 @@ const closeOtherArticles = (articleName = "gamePage") => {
 			article.classList.remove("hideElement");
 		}
 	});
-	logoImg.style.display = articleName === "allGames" ? "block" : "none";
+	logoContainer.querySelector("img").style.display = articleName === "allGames" ? "block" : "none";
+	logoContainer.querySelector("p").textContent = articleName === "allGames" ? "AVIOR GAMES" : "AVIOR GROUP";
 };
+
+//Проверка анимации точки
+document.addEventListener("keydown", event => {
+	event.code == "KeyK" && animateLine();
+	event.code == "KeyL" && resetLine();
+});
 
 // Задание реакции на нажатие кнопок навигации
 const headerNavigatiobBtns = [];
@@ -29,7 +37,6 @@ document.querySelectorAll(".pageNavigation ul li").forEach(btn => {
 	}
 });
 
-console.log("headerNavigatiobBtns", headerNavigatiobBtns);
 headerNavigatiobBtns.forEach(btn => {
 	btn.addEventListener("click", () => {
 		switch (btn.textContent) {
@@ -112,7 +119,15 @@ arrGames.forEach(el => {
 		if (gameName === "gardenSlots") {
 			closeOtherArticles();
 			showPageGame(gameName);
-			logoImg.style.display = "block"; //отображение значка AviorGames
+			logoContainer.querySelector("img").style.display = "block"; //отображение значка AviorGames
+			logoContainer.querySelector("p").textContent = "AVIOR GAMES";
 		}
+	});
+	el.addEventListener("mouseover", function () {
+		el.style.transform = "scale(1.05)";
+	});
+
+	el.addEventListener("mouseout", function () {
+		el.style.transform = "scale(1)";
 	});
 });

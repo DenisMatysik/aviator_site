@@ -69,11 +69,16 @@
 	border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 
-.allGames-section2-contacts .header-social-icons a {
+.allGames-social-icons a {
 	margin-right: 50px;
 }
-.allGames-section2-contacts .header-social-icons a:last-child {
+.allGames-social-icons a:last-child {
 	margin-right: 0px;
+}
+
+.allGames-social-icons a img {
+	min-width: 40px;
+	min-height: 40px;
 }
 
 .allGames-section2-contacts-address,
