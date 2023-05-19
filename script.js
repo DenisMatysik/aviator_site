@@ -1,5 +1,5 @@
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
-import {animateLine, resetLine} from "./animationLine.js"; //функция отображает страницу с игрой
+import {startAnimLine} from "./animationLine.js"; //функция отображает страницу с игрой
 
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
@@ -18,8 +18,9 @@ const closeOtherArticles = (articleName = "gamePage") => {
 
 //Проверка анимации точки
 document.addEventListener("keydown", event => {
-	event.code == "KeyK" && animateLine();
-	event.code == "KeyL" && resetLine();
+	if (event.code == "KeyK") {
+		startAnimLine();
+	}
 });
 
 // Задание реакции на нажатие кнопок навигации
