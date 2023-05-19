@@ -30,7 +30,7 @@ blockquote,
 dl,
 dd {
 	margin: 0;
-	user-select: none;
+	/* user-select: none; */
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
