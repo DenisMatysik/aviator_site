@@ -9,9 +9,9 @@ export const startAnimLine = () => {
 };
 
 const animateLine = () => {
-	width += 0.5; // Увеличение ширины линии
+	width += 1; // Увеличение ширины линии
 	element.style.width = width + "px"; // Изменениеирины элемента
-	if (width <= 2 * container.offsetWidth) {
+	if (width <= 2 * container.offsetWidth - 1) {
 		requestAnimationFrame(animateLine); // Продолжаем анимацию
 	}
 };

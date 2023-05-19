@@ -1,6 +1,7 @@
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
 import {startAnimLine} from "./animationLine.js"; //функция отображает страницу с игрой
 
+window.addEventListener("load", () => startAnimLine()); //запуск анимации линии когда страница загрузилась
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
 const logoContainer = document.querySelector(".header-logo-container");
@@ -15,13 +16,6 @@ const closeOtherArticles = (articleName = "gamePage") => {
 	logoContainer.querySelector("img").style.display = articleName === "allGames" ? "block" : "none";
 	logoContainer.querySelector("p").textContent = articleName === "allGames" ? "AVIOR GAMES" : "AVIOR GROUP";
 };
-
-//Проверка анимации точки
-document.addEventListener("keydown", event => {
-	if (event.code == "KeyK") {
-		startAnimLine();
-	}
-});
 
 // Задание реакции на нажатие кнопок навигации
 const headerNavigatiobBtns = [];
@@ -64,6 +58,7 @@ headerNavigatiobBtns.forEach(btn => {
 			// 	// closeOtherArticles("outstaff");
 			// 	break;
 			default:
+				startAnimLine();
 				closeOtherArticles("mainPage");
 				break;
 		}
