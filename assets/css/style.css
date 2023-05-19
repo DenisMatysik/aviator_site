@@ -34,7 +34,9 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-	min-height: 100vh;
+	/* height: 100%; */
+	/* height: 100vh; */
+	/* min-height: 100vh; */
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
@@ -160,7 +162,7 @@ select {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	top: 25px;
+	top: 20px;
 	left: -25px;
 	background-color: #ffffff;
 	width: 200px;
