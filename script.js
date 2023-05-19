@@ -1,6 +1,8 @@
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
 import {startAnimLine} from "./animationLine.js"; //функция отображает страницу с игрой
+import {clearBrowserCache} from "./clearBrowserCache.js"; //функция отображает страницу с игрой
 
+clearBrowserCache();
 window.addEventListener("load", () => startAnimLine()); //запуск анимации линии когда страница загрузилась
 //Прячем все остальные article, когда открываем игру
 const articlesArr = document.querySelectorAll("main article");
