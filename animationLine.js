@@ -4,9 +4,9 @@ let width = 0;
 let startX = 0;
 export const animateLine = () => {
 	width += 0.5; // Увеличение ширины линии
-	startX += 0.5; // Увеличение позиции элемента по горизонтали
+	// startX += 0.5; // Увеличение позиции элемента по горизонтали
 	element.style.width = width + "px"; // Изменениеирины элемента
-	element.style.left = startX + "px"; // Изменение позиции элемента по горизонтали
+	// element.style.left = startX + "px"; // Изменение позиции элемента по горизонтали
 	if (width <= container.offsetWidth) {
 		requestAnimationFrame(animateLine); // Продолжаем анимацию
 	}
