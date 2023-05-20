@@ -7,6 +7,7 @@ header {
 }
 
 .header-logo-container {
+	cursor: pointer;
 	margin: 30px 0 35px;
 	display: flex;
 	align-items: center;
@@ -21,6 +22,7 @@ header {
 }
 
 .header-logo-container img {
+	display: none;
 	position: absolute;
 	left: -40px;
 	width: 30px;

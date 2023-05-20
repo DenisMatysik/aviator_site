@@ -1,0 +1,40 @@
+.outstaff-section2 {
+	max-width: 1000px;
+}
+
+.outstaff-section2-subtitles {
+	margin-bottom: 20px;
+}
+
+.outstaff-section2-subtitles p {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.outstaff-section2-description p {
+	font-size: 16px;
+	font-weight: 500;
+	color: #404040;
+	margin: 15px 0 20px;
+}
+
+.outstaff-section2-textBlock {
+	margin-top: 50px;
+}
+
+.outstaff-section2-textBlock:last-child {
+	margin-bottom: 100px;
+}
+
+.outstaff-section2-textBlock h4 {
+	font-size: 24px;
+	font-family: 700;
+	margin-bottom: 20px;
+}
+
+.outstaff-section2-textBlock p {
+	color: #404040;
+	font-size: 16px;
+	font-family: 500;
+}

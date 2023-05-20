@@ -1,12 +1,9 @@
 .allGames-section1 {
-	height: 250px;
-	background: linear-gradient(118.88deg, #33d5f9 4.39%, #1b38f0 63.76%, #000690 123.12%);
 	margin-bottom: 100px;
 }
 
 .allGames-section2 {
 	max-width: 1270px;
-	margin: auto;
 }
 
 .allGames-section2-title {

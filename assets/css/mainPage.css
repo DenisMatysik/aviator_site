@@ -1,10 +1,9 @@
 /* Main Section 1 */
 .mainPage-section1 {
+	height: auto;
 	color: white;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background: linear-gradient(118.88deg, #33d5f9 4.39%, #1b38f0 63.76%, #000690 123.12%);
 }
 
 .mainPage-section1-text-block {

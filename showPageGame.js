@@ -21,7 +21,7 @@ const gamesConfiguration = [
 export const showPageGame = gameName => {
 	const section1 = document.querySelector("#gamePage .gamePage-section1");
 	const gameInf = gamesConfiguration.find(conf => conf.gameName === gameName);
-	const navigationelement = document.querySelector(".gamePage-section2-navigation .selectedChapter"); //Навигация
+	const navigationelement = document.querySelector(".section2-navigation .selectedChapter"); //Навигация
 	const gameTitle = document.querySelector(".gamePage-section2-title");
 	const gameDescription = document.querySelector(".gamePage-section2-textBlock p");
 	const mainFrame = document.querySelector(".gamePage-section2-gameInf-mainImg img"); //главная картинка
@@ -29,7 +29,6 @@ export const showPageGame = gameName => {
 	const specificationsArr = document.querySelectorAll(".gamePage-section2-gameInf-Specifications table tbody tr .gameInf-Specifications-value");
 
 	section1.style.backgroundImage = `url('${gameInf.path}background.png')`;
-	// section1.children[0].setAttribute("src", `${gameInf.path}background.png`); //устанавливаем картинку секции 1
 	navigationelement.textContent = gameInf.specifications.name; //изменяем навигацию страницы
 	gameTitle.textContent = gameInf.specifications.name; //изменяем заколовок страницы
 	mainFrame.setAttribute("src", `${gameInf.path}/frame1.png`); //устанавливаем новую главную картинку

@@ -1,33 +1,12 @@
 .gamePage-section1 {
-	height: 250px;
 	background-image: url("/assets/img/gardenSlots/background.png");
-	background-size: auto;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100%;
 }
 
 .gamePage-section2 {
 	max-width: 1000px;
-	margin: auto;
-}
-
-.gamePage-section2-navigation {
-	margin: 50px 0 40px;
-	display: flex;
-	font-size: 14px;
-	font-weight: 500;
-	align-items: center;
-}
-
-.gamePage-section2-navigation img {
-	width: 6px;
-	margin: 0 25px;
-}
-
-.selectedChapter {
-	font-weight: 600;
-	color: #008ede;
 }
 
 .gamePage-section2-gameInf-mainImg {

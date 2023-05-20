@@ -55,28 +55,35 @@ headerNavigatiobBtns.forEach(btn => {
 				closeOtherArticles("allGames");
 				break;
 			case "Сайты":
-				startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
-				closeOtherArticles("mainPage");
+				closeOtherArticles("allSites");
 				break;
-			// case "Сервисы":
-			// 	// closeOtherArticles("allServises");
-			// 	break;
-			// case "О компании":
-			// 	break;
+			case "Сервисы":
+				closeOtherArticles("allServices");
+				break;
+			case "О компании":
+				closeOtherArticles("aboutCompany");
+				break;
 			case "Посмотреть все работы":
 				closeOtherArticles("allGames");
 				break;
-			// case "Аутстафф":
-			// 	// closeOtherArticles("outstaff");
-			// 	break;
-			// case "Контакты":
-			// 	// closeOtherArticles("outstaff");
-			// 	break;
+			case "Аутстафф":
+				closeOtherArticles("outstaff");
+				break;
+			case "Контакты":
+				closeOtherArticles("contacts");
+				break;
 			default:
 				closeOtherArticles("appDevelopment");
 				break;
 		}
 	});
+});
+
+//нажатие на логотип переводит на шлавную страницу
+const logoBtn = document.querySelector(".header-logo-container");
+logoBtn.addEventListener("click", () => {
+	startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
+	closeOtherArticles("mainPage");
 });
 
 //MainPage - элементы 2-ой секции
@@ -119,8 +126,7 @@ navItems.forEach(item => {
 	});
 });
 
-// Добавляем нажатие на икноки игр на странице со всеми играми
-// const arrGames = document.querySelectorAll(".allGames-section2-projects-container .section2-project");
+// Добавляем нажатие на икноки игр на странице со всеми играми и главной странице
 const arrGames = document.querySelectorAll(".section2-project");
 
 arrGames.forEach(el => {
@@ -142,6 +148,7 @@ arrGames.forEach(el => {
 	});
 });
 
+// Добавляем нажатие на икноки соцсетей
 const socialIcons = document.querySelectorAll(".social-icons a");
 socialIcons.forEach(icon =>
 	icon.addEventListener("click", e => {

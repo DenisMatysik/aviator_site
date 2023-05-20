@@ -1,43 +1,5 @@
-.appDevelopment-section1 {
-	width: 100%;
-	height: 250px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: linear-gradient(118.88deg, #33d5f9 4.39%, #1b38f0 63.76%, #000690 123.12%);
-}
-
-.appDevelopment-section1-title {
-	text-align: center;
-	color: white;
-	font-size: 40px;
-	font-weight: 700;
-}
-
 .appDevelopment-section2 {
-	display: flex;
-	flex-direction: column;
 	max-width: 1000px;
-	margin: auto;
-}
-
-.appDevelopment-section2-navigation {
-	margin: 50px 0 40px;
-	display: flex;
-	font-size: 14px;
-	font-weight: 500;
-	align-items: center;
-}
-
-.appDevelopment-section2-navigation img {
-	width: 6px;
-	/* height: 6px; */
-	margin: 0 25px;
-}
-
-.selectedChapter {
-	font-weight: 600;
-	color: #008ede;
 }
 
 .appDevelopment-section2-subtitles {
