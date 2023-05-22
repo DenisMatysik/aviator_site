@@ -52,7 +52,7 @@ footer {
 }
 
 .footer-phone {
-	color: white;
+	color: white !important;
 	margin-bottom: 15px;
 }
 

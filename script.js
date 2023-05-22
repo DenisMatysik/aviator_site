@@ -1,12 +1,12 @@
+import "./gamePageSlider.js";
 import {showPageGame} from "./showPageGame.js"; //функция отображает страницу с игрой
 import {startLineAnimation} from "./animationLine.js"; //функция отображает страницу с игрой
 
 //запуск очистки кэша браузера при входе на страницу
 window.onload = () => {
-	console.log("очистка кэша");
 	const cacheBuster = new Date().getTime();
-	const stylesheet = document.getElementById("stylesheet");
-	const script = document.getElementById("script");
+	const stylesheet = document.querySelector("head link");
+	const script = document.querySelector("head script");
 
 	if (stylesheet) {
 		stylesheet.href = `${stylesheet.href}?v=${cacheBuster}`;
@@ -15,6 +15,7 @@ window.onload = () => {
 	if (script) {
 		script.src = `${script.src}?v=${cacheBuster}`;
 	}
+
 	startLineAnimation(document.querySelector(".mainPage-section2-image-block img"));
 };
 

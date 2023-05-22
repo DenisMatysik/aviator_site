@@ -1,8 +1,7 @@
 /* Main Section 1 */
 .mainPage-section1 {
-	height: auto;
+	height: auto !important;
 	color: white;
-	display: flex;
 	flex-direction: column;
 }
 
